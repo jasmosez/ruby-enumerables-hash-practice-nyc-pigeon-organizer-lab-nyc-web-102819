@@ -32,9 +32,10 @@ def nyc_pigeon_organizer(data)
           names[n] = element
           n += 1
         end
-#        p "top_hash[element]: #{top_hash[element]}"
-#        p "top_key: #{top_key}"
-#        puts "top_key class: #{top_key.class}"
+        p "top_hash[element]: #{top_hash[element]}"
+        p "top_hash[element].class: #{top_hash[element].class}"
+        p "top_key: #{top_key}"
+        p "top_key.class: #{top_key.class}"
 #        p "(top_hash[elment][top_key]).push(second_key.to_s): #{(top_hash[elment][top_key]).push(second_key.to_s)}"
       }
         puts "(top_hash[elment][top_key]).class: #{(top_hash[elment][top_key]).class}"
