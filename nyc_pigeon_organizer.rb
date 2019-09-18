@@ -27,6 +27,8 @@ def nyc_pigeon_organizer(data)
           :lives => []
           }
         end
+        
+        top_hash[element][top_key].push(second_key.to_s)
 
         # REPORTING
         puts "element: #{element}"
@@ -37,6 +39,7 @@ def nyc_pigeon_organizer(data)
         puts "top_hash[element][top_key]: #{top_hash[element][top_key]}"
         puts "top_hash[element][top_key].class: #{top_hash[element][top_key].class}"
       
+         
         third_hash
       }
       qo += 1
