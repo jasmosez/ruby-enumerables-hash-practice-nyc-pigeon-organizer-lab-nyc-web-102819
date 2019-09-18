@@ -20,9 +20,7 @@ def nyc_pigeon_organizer(data)
         #add items to array of quality values
         top_hash[element][top_key].push(second_key.to_s)
       }
-      qo += 1
     }
-    q += 1
     top_hash
   }
 end
