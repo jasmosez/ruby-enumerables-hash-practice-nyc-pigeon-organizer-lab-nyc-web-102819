@@ -19,7 +19,8 @@ def nyc_pigeon_organizer(data)
         
         puts "element: #{element}"
         
-        # could add logic to avoid reassigning values when hash exists
+        # logic to avoid reassigning values when hash exists
+        if !top_hash[element]
         top_hash[element] = {
         :color => [],
         :gender => [],
