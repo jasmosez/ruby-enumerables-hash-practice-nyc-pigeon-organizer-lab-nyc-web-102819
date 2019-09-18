@@ -1,27 +1,36 @@
 def nyc_pigeon_organizer(data)
   qualities = []
-  colors = []
+  quality_options = []
   genders = []
   locations = []
   names = []
   q = 0
-  c = 0
+  qo = 0
+  n = 0
   
-  pigeon_list = data.reduce({}) {
-    |top_hash, (key, value)|
-    qualities[q] = key
-    value.reduce({}) {
-      |second_hash, (k, v)|
-      colors[c] = k
-      c += 1
+  data.reduce({}) { |top_hash, (top_key, top_value)|
+    qualities[q] = top_key
+    
+    top_value.reduce({}) { |second_hash, (second_key, second_value)|
+      quality_options[qo] = second_key
+      
+      second_value.reduce({}) { |third_hash, (third_key, third_value)|
+        names[n] = third_key
+        n += 1
+      }
+      
+      qo += 1
     }
+    
     q += 1
   }
   
-  puts "qualities"
-  puts qualities
-  puts "colors"
-  puts colors
+  puts "QUALITIES"
+  p qualities
+  puts "OPTIONS"
+  p quality_options
+  puts "NAMES"
+  p names
 end
 
 
