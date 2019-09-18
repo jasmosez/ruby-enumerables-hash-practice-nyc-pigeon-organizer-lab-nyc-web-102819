@@ -20,7 +20,7 @@ def nyc_pigeon_organizer(data)
           :color => [],
           :gender => [],
           :lives => []
-        }
+          }
         end
         names[n] = third_key
         n += 1
@@ -39,7 +39,8 @@ def nyc_pigeon_organizer(data)
   puts "NAMES"
   p names
   
-  puts pigeon_list
+  p pigeon_list
+  
 end
 
 
