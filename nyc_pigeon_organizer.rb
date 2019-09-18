@@ -15,6 +15,7 @@ def nyc_pigeon_organizer(data)
       quality_options[qo] = second_key
       
       second_value.reduce({}) { |third_hash, (third_key, third_value)|
+        p third_value
         names[n] = third_key
         n += 1
       }
