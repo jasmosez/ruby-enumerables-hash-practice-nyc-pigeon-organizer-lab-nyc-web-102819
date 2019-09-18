@@ -15,6 +15,11 @@ def nyc_pigeon_organizer(data)
       quality_options[qo] = second_key
       
       second_value.reduce({}) { |third_hash, third_key|
+        puts "top_hash"
+        puts top_hash
+        puts "third_key"
+        puts third_key
+        
         top_hash[third_key] = {
         :color => [],
         :gender => [],
