@@ -37,10 +37,13 @@ def nyc_pigeon_organizer(data)
         p "top_key: #{top_key}"
         p "top_key.class: #{top_key.class}"
 #        p "(top_hash[elment][top_key]).push(second_key.to_s): #{(top_hash[elment][top_key]).push(second_key.to_s)}"
+      
+        third_hash
       }
         puts "(top_hash[elment][top_key]).class: #{(top_hash[elment][top_key]).class}"
       
       qo += 1
+      second_hash
     }
     
     q += 1
