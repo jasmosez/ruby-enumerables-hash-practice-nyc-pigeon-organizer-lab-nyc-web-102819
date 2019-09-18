@@ -7,15 +7,20 @@ def nyc_pigeon_organizer(data)
   qo = 0
 
   pigeon_list = data.reduce({}) { |top_hash, (top_key, top_value)|
+    # top_value is the hash any of the three main qualities point to
+    
     qualities[q] = top_key
-    # top value is the hash any of the three main qualities point to
     top_value.reduce({}) { |second_hash, (second_key, second_value)|
+      # second_value is the array any quality option points to
+
       quality_options[qo] = second_key
-      
-      second_value.reduce({}) { |third_hash, third_key|
-        puts "third_key: #{third_key}"
+      second_value.reduce({}) { |third_hash, element|
+        # element is each name (class = string)
         
-        top_hash[third_key] = {
+        puts "element: #{element}"
+        
+        # could add logic to avoid reassigning values when hash exists
+        top_hash[element] = {
         :color => [],
         :gender => [],
         :lives => []
