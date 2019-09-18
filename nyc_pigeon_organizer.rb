@@ -37,6 +37,7 @@ def nyc_pigeon_organizer(data)
 #        puts "top_key class: #{top_key.class}"
 #        p "(top_hash[elment][top_key]).push(second_key.to_s): #{(top_hash[elment][top_key]).push(second_key.to_s)}"
       }
+        puts "(top_hash[elment][top_key]).class: #{(top_hash[elment][top_key]).class}"
       
       qo += 1
     }
