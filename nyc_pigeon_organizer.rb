@@ -3,8 +3,10 @@ def nyc_pigeon_organizer(data)
   quality_options = []
   genders = []
   locations = []
+  names = []
   q = 0
   qo = 0
+  n = 0
 
   pigeon_list = data.reduce({}) { |top_hash, (top_key, top_value)|
     # top_value is the hash any of the three main qualities point to
@@ -27,6 +29,8 @@ def nyc_pigeon_organizer(data)
           :gender => [],
           :lives => []
           }
+          names[n] = element
+          n += 1
         end
 #        p "top_hash[element]: #{top_hash[element]}"
 #        p "top_key: #{top_key}"
