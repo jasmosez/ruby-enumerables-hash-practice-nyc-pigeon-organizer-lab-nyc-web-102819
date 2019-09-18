@@ -1,13 +1,4 @@
 def nyc_pigeon_organizer(data)
-  qualities = []
-  quality_options = []
-  genders = []
-  locations = []
-  names = []
-  q = 0
-  qo = 0
-  n = 0
-
   pigeon_list = data.reduce({}) { |top_hash, (top_key, top_value)|
     # top_value is the hash any of the three main qualities point to
     
@@ -15,7 +6,7 @@ def nyc_pigeon_organizer(data)
       # second_value is the array any quality option points to
 
       second_value.reduce({}) { |third_hash, element|
-        # element is each name (class = string)
+        # element is each name in the array (class of name = string)
         
         # logic to avoid reassigning values when hash exists
         if top_hash.has_key?(element) == false
