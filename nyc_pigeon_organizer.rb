@@ -19,9 +19,6 @@ def nyc_pigeon_organizer(data)
       second_value.reduce({}) { |third_hash, element|
         # element is each name (class = string)
         
-        p "element: #{element}"
-#        p "top_hash.has_key?(element): #{top_hash.has_key?(element)}"
-
         # logic to avoid reassigning values when hash exists
         if top_hash.has_key?(element) == false
           top_hash[element] = {
@@ -29,14 +26,15 @@ def nyc_pigeon_organizer(data)
           :gender => [],
           :lives => []
           }
-          names[n] = element
-          n += 1
         end
-        p "top_hash[element]: #{top_hash[element]}"
+
+        puts "element: #{element}"
+        puts "top_hash[element]: #{top_hash[element]}"
         p "top_hash[element].class: #{top_hash[element].class}"
         p "top_key: #{top_key}"
         p "top_key.class: #{top_key.class}"
-#        p "(top_hash[elment][top_key]).push(second_key.to_s): #{(top_hash[elment][top_key]).push(second_key.to_s)}"
+        p "top_hash[elment][top_key]: #{top_hash[elment][top_key]}"
+        p "top_hash[elment][top_key]: #{top_hash[elment][top_key]}"
       
         third_hash
       }
