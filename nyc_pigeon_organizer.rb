@@ -7,9 +7,12 @@ def nyc_pigeon_organizer(data)
   i = 0
   
   pigeon_list = data.reduce({}) {
-    |new_hash, (key, value)|
+    |top_hash, (key, value)|
     qualities[i] = key
-    value.reduce
+    value.reduce({}) {
+      |second_hash, (k, v)|
+      
+    }
     i += 1
   }
 end
