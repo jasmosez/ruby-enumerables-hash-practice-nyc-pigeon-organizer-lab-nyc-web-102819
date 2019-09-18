@@ -18,7 +18,7 @@ def nyc_pigeon_organizer(data)
         # element is each name (class = string)
         
         puts "element: #{element}"
-        
+        puts "top_hash.has_key?(element): #{top_hash.has_key?(element)}"
         # logic to avoid reassigning values when hash exists
         if top_hash.has_key?(element) == false
           top_hash[element] = {
