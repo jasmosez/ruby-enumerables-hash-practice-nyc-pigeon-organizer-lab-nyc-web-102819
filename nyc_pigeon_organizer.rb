@@ -8,7 +8,7 @@ def nyc_pigeon_organizer(data)
 
   pigeon_list = data.reduce({}) { |top_hash, (top_key, top_value)|
     qualities[q] = top_key
-    
+    # top value is the hash any of the three main qualities point to
     top_value.reduce({}) { |second_hash, (second_key, second_value)|
       quality_options[qo] = second_key
       
