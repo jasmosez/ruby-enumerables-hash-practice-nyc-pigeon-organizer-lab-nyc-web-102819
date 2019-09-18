@@ -17,6 +17,11 @@ def nyc_pigeon_organizer(data)
     }
     q += 1
   }
+  
+  puts "qualities"
+  puts qualities
+  puts "colors"
+  puts colors
 end
 
 
