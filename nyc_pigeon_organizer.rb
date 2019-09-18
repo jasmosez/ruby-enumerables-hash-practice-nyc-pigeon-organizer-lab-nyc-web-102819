@@ -30,6 +30,7 @@ def nyc_pigeon_organizer(data)
     }
     
     q += 1
+    top_hash
   }
   
   puts "QUALITIES"
