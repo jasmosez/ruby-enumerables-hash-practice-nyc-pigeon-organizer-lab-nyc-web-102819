@@ -27,7 +27,7 @@ def nyc_pigeon_organizer(data)
           :lives => []
           }
         else
-          top_hash[elment][top_key].push
+          top_hash[elment][top_key].push(second_key)
       }
       
       qo += 1
