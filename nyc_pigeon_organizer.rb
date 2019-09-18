@@ -10,12 +10,12 @@ def nyc_pigeon_organizer(data)
         
         # logic to avoid reassigning values when hash exists
 #        if top_hash.has_key?(element) == false
-          top_hash[element] = {
-          :color => [],
-          :gender => [],
-          :lives => []
-          }
-        end
+#          top_hash[element] = {
+#          :color => [],
+#          :gender => [],
+#          :lives => []
+#          }
+#        end
         
         top_hash[element][top_key].push(second_key.to_s)
       }
