@@ -8,15 +8,16 @@ def nyc_pigeon_organizer(data)
       second_value.reduce({}) { |third_hash, element|
         # element is each name in the array (class of name = string)
         
-        # logic to avoid reassigning values when hash exists
-#        if top_hash.has_key?(element) == false
-#          top_hash[element] = {
-#          :color => [],
-#          :gender => [],
-#          :lives => []
-#          }
-#        end
+        # logic to create new key/value pair for name if it doesn't exist
+        if top_hash.has_key?(element) == false
+          top_hash[element] = {
+          :color => [],
+          :gender => [],
+          :lives => []
+          }
+        end
         
+        #add items to array of quality values
         top_hash[element][top_key].push(second_key.to_s)
       }
       qo += 1
