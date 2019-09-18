@@ -29,21 +29,10 @@ def nyc_pigeon_organizer(data)
         end
         
         top_hash[element][top_key].push(second_key.to_s)
-
-        # REPORTING
-        puts "element: #{element}"
-        puts "top_hash[element]: #{top_hash[element]}"
-        puts "top_hash[element].class: #{top_hash[element].class}"
-        puts "top_key: #{top_key}"
-        puts "top_key.class: #{top_key.class}"
-        puts "top_hash[element][top_key]: #{top_hash[element][top_key]}"
-        puts "top_hash[element][top_key].class: #{top_hash[element][top_key].class}"
-      
-         
-        third_hash
+#        third_hash
       }
       qo += 1
-      second_hash
+#      second_hash
     }
     q += 1
     top_hash
