@@ -7,5 +7,6 @@ def nyc_pigeon_organizer(data)
     puts "value"
     puts value.class
     puts value
+    puts ""
   }
 end
