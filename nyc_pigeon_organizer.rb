@@ -34,8 +34,8 @@ def nyc_pigeon_organizer(data)
         puts "top_hash[element].class: #{top_hash[element].class}"
         puts "top_key: #{top_key}"
         puts "top_key.class: #{top_key.class}"
-        puts "top_hash[elment][top_key]: #{top_hash[elment][top_key]}"
-        puts "top_hash[elment][top_key].class: #{top_hash[elment][top_key].class}"
+        puts "top_hash[element][top_key]: #{top_hash[elment][top_key]}"
+        puts "top_hash[element][top_key].class: #{top_hash[elment][top_key].class}"
       
         third_hash
       }
