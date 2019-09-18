@@ -1,6 +1,12 @@
 def nyc_pigeon_organizer(data)
-  data.reduce({}) {
+  data.reduce([]) {
     |new_hash, (key, value)|
+    
+    
+  }
+end
+
+
     puts "key"
     puts key.class
     puts key
@@ -8,6 +14,3 @@ def nyc_pigeon_organizer(data)
     puts value.class
     puts value
     puts ""
-    
-  }
-end
