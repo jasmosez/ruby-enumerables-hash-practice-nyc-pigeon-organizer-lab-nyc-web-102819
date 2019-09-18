@@ -27,6 +27,7 @@ def nyc_pigeon_organizer(data)
           :lives => []
           }
         end
+        puts "top_hash[element]: #{top_hash[element]}"
         puts "top_hash[elment][top_key].push(second_key.to_s): #{top_hash[elment][top_key].push(second_key.to_s)}"
       }
       
