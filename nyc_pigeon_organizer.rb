@@ -20,14 +20,14 @@ def nyc_pigeon_organizer(data)
         puts "element: #{element}"
         
         # logic to avoid reassigning values when hash exists
-        if top_hash[element].has_key? == false
+        if top_hash.has_key?(element) == false
           top_hash[element] = {
           :color => [],
           :gender => [],
           :lives => []
           }
-#        end
-#        top_hash[elment][top_key].push(second_key.to_s)
+        end
+        top_hash[elment][top_key].push(second_key.to_s)
       }
       
       qo += 1
