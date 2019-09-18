@@ -28,6 +28,7 @@ def nyc_pigeon_organizer(data)
           }
         end
         puts "top_hash[element]: #{top_hash[element]}"
+        puts "top_key: #{top_key}"
         puts "top_hash[elment][top_key].push(second_key.to_s): #{top_hash[elment][top_key].push(second_key.to_s)}"
       }
       
